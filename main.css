@@ -1,0 +1,175 @@
+/* Common CSS */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,700i');
+body {
+    font-family: 'IBM Plex Serif', serif;
+}
+
+/* Navbar */
+.navbar {
+    font-family: 'Raleway', sans-serif;
+}
+.nav-link {position:relative;}
+.nav-link:after {
+    content:""; 
+    display:block; 
+    position:absolute; 
+    left:0; 
+    bottom:8px; 
+    width:100%; 
+    height:1px; 
+    background-color:#000; 
+    transform:scaleX(0); 
+    transform-origin:center left; 
+    transition:.45s;
+}
+.nav-link:hover::before, .nav-link:hover::after {transform:scaleX(1);}
+
+/* Footer */
+footer {
+    background-color: #B9D7D9;
+    margin-top: 2rem;
+}
+.logo-img {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.8rem;
+    display: block;
+}
+.footer-name {
+    font-size: 1.3rem;
+    padding: .5rem 0rem 0rem 1rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.social-media {
+    padding-top: 1rem;
+    text-align: center;
+    color: #493736;
+}
+.social-media i {
+    margin: 2px;
+}
+.footer-note {
+    font-size: 10px;
+    text-align: center;
+    padding: .6rem;
+}
+@keyframes rotatelogo {
+	30% {
+		transform: rotate(45deg);
+	}
+	45% {
+		transform: rotate(0deg) scale(1.2);
+	}
+	60% {
+		transform: rotate(-45deg) scale(1.2);
+	}
+	75% {
+		transform: rotate(0deg) scale(1);
+	}
+}
+.logo-img {animation: rotatelogo 5s 0s infinite;}
+.footer-transform {
+    transition: 1s;
+}
+.footer-transform:hover {
+    transform: scale(1.8);
+}
+
+/* Home Page */
+.card-title {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+.list-transform {
+    transition: .5s;
+}
+.list-transform:hover {
+    transform: translateX(1rem);
+}
+.img-transform {
+    transition: .5s;
+}
+.img-transform:hover {
+    transform: scale(1.2);
+}
+/* Recipe Page */
+.search-title {
+    padding-top: 3rem;
+    font-size: 1.5rem;
+}
+.search-bar {
+    padding: 1.5rem 0rem;
+}
+.list-group-item-info {
+    background-color: #B9D7D9;
+}
+.list-title {
+    font-size: 1.2rem;
+    margin: 1rem 0rem;
+}
+.video-title {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px; height: 0; overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+/* Store Page */
+.btn-transform {
+    transition: .5s;
+}
+.btn-transform:hover {
+    transform: skew(15deg);
+}
+
+/* About Page */
+.contact-title {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+.contact {
+    padding-top: 1rem;
+    text-align: center;
+    color: #493736;
+}
+.contact i {
+    margin: 1rem;
+    font-size: 4rem;
+}
+.contact-transform {
+    transition: .5s;
+}
+.contact-transform:hover {
+    transform: scale(1.3);
+}
+.join {
+    font-size: 1.5rem;
+    padding: 3rem 0rem 1rem 0rem;
+}
+
+/* Media Queries */
+@media screen and (max-width:576px){
+.logo-img {
+    margin-top: 1.8rem;
+    width: 15%;
+    height: 15%;
+}
+@media screen and (max-width:768px){
+.store .card {
+    text-align: center;
+    margin: auto;
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Recipe & Life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+    <h1 class="sr-only">Recipe & Life</h1>
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color: #B9D7D9;">
+    <h1 class="sr-only">Navbar</h1>
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo image">
+                Recipe & Life
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="recipe.html">Recipe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="store.html">Store</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav><!-- end navbar -->
+
+    <section>
+        <h1 class="sr-only">Home Page</h1>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/slide1.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Daily Recommendation</h5>
+                        <p>"A simple soy sauce and brown sugar marinade, with hints of lemon and garlic, are the perfect salty-sweet complement to rich salmon fillets. Even my 9 year old loves this recipe!"</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/slide2.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Daily Recommendation</h5>
+                        <p>"The finest Japanese pork ramen takes considerable culinary skill and many hours to create. Here is a simplified, yet still delicious, version that boasts plenty of succulent braised pork. If you can’t find high-quality fresh ramen noodles, use fresh thin Chinese egg noodles or fresh linguine."</p>
+                    </div>
+                    
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/slide3.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Daily Recommendation</h5>
+                        <p>"In this fun twist on shrimp and grits, buttery creamed corn stands in for grits—a sweet and tasty surprise. The shrimp mixture takes on bold flavors from Creole seasoning, smoked paprika, thyme, and garlic—making for a robust mixture that’s complemented by the sweetness of the creamed corn."</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/slide4.jpg" alt="Forth slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Daily Recommendation</h5>
+                        <p>"If you've wanted to learn how to make fried chicken, this is the recipe for you. Always a picnic favorite, this chicken is delicious either hot or cold. Kids call it my Kentucky Fried Chicken! —Jeanne Schnitzler, Lima, Montana"</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end slides -->
+
+        <div class="container mt-3">
+                <div class="row">
+                <div class="col-12 col-md-4">
+                <ul class="list-group list-group-flush">
+                    <h4 class="list-group-item list-transform">Trending Recipes</h4>
+                    <li class="list-group-item list-transform">Grilled Salmon with Lemon</li>
+                    <li class="list-group-item list-transform">Japanese Beef Ramen <span class="badge badge-info">Trending!</span></li>
+                    <li class="list-group-item list-transform">Creole Shrimp and Creamed Corn</li>
+                    <li class="list-group-item list-transform">Grilled Chicken with Patatoes</li>
+                    <li class="list-group-item list-transform">Cheesy Croissant Casserole <span class="badge badge-success">New!</span></li>
+                    <li class="list-group-item list-transform">Caprese Stuffed Chicken</li>
+                    <li class="list-group-item list-transform">Seriously Addictive Bacon Recipes</li>
+                    <li class="list-group-item list-transform">Spinach and Artichoke Quiche</li>
+                    <li class="list-group-item list-transform">Alphabet Pizza <span class="badge badge-danger">Hot!</span></li>
+                    <li class="list-group-item list-transform">Rosemary Pork Chops</li>
+                    <li class="list-group-item list-transform">The 85 Most Delish Taco Recipes</li>
+                </ul><!-- end list -->
+                </div><!-- end cols -->
+                
+                <div class="col-12 col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Daily Creative Recipe</h5>
+                        <p class="card-text">KITTENCAL'S MOIST CHEDDAR-GARLIC OVEN FRIED CHICKEN BREAST</p>
+                        <p class="card-text">
+                            <small class="text-muted">“This is for serious garlic lovers. The chicken bakes out so moist and tender! Grated cheese may be sprinkled on top of the
+                            breast the last 5 minutes of cooking if desired but that is optional. For the coating amount you might be able to get away
+                            with 5 or maybe 6 very small chicken breasts, but I would suggest to increase the amount slightly --- to take this dish to
+                            yet another level, about 10 minutes before the cooking time is finished, drizzle the top of the chicken with a little pasta
+                            sauce, then sprinkle mozzarella cheese on top. Return to oven for about 10 minutes until the chicken is completely cooked
+                            and sauce is hot and cheese has melted. For a lemon-garlic flavor add in 3 tablespoons lemon juice to the melted butter/garlic
+                            mixture.”</small>
+                        </p>
+                    </div>
+                    <img class="card-img-bottom" src="images/creative.jpg" alt="Creative Recipe Image">
+                </div><!-- end card -->
+                </div><!-- end cols -->
+            </div><!-- end row -->
+
+            <div class="card-title">
+            Designer's Pick:
+            </div>
+            <div class="card-deck">
+                <div class="col-12 col-md-6 col-lg-4">
+                <div class="card mb-2">
+                    <img class="card-img-top img-transform" src="images/card1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">For tasty, straight-from-the oven meals</h5>
+                        <p class="card-text">Baked eggplant for a dinner party for eight or oven chips for a quick meal for one? Our ovenware has a wide mix of sizes to suit whatever you’re cooking.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                <div class="card mb-2">
+                    <img class="card-img-top img-transform" src="images/card2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">For chopping, slicing and sharpening</h5>
+                        <p class="card-text">Cooking is more fun when you cut the chilies and not your fingers. Our kitchen knives are shaped to give you a good grip and be comfortable to use.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 1 day ago</small>
+                    </div>
+                </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                <div class="card mb-2">
+                    <img class="card-img-top img-transform" src="images/card3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Right tools, easier cooking</h5>
+                        <p class="card-text">Peeling, mashing, pressing, grating … and that’s just potatoes. With all the things you do with food, having the right kitchen utensils for the different jobs makes life a lot easier.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 15 mins ago</small>
+                    </div>
+                </div>
+                </div>
+            </div><!-- end card deck -->
+        </div><!-- end container -->
+    </section>
+
+    <footer>
+        <div class="footer-logo">
+            <img class="logo-img" src="images/logo.png" alt="logo image">
+            <div class="footer-name">Recipe & Life</div>
+        </div>
+        <div class="social-media">
+            <i class="fab fa-facebook-f footer-transform"></i>
+            <i class="fab fa-twitter footer-transform"></i>
+            <i class="fab fa-instagram footer-transform"></i>
+            <i class="fab fa-google-plus-g footer-transform"></i>
+            <i class="fab fa-pinterest footer-transform"></i>
+        </div>
+        <div class="footer-note">©2018 Yue Lin Designed. All Rights Reserved.</div>
+    </footer>
+</body>
+</html> 

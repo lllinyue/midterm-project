@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Recipe & Life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+    <h1 class="sr-only">Recipe & Life</h1>
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color: #B9D7D9;">
+        <h1 class="sr-only">Navbar</h1>
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo image"> Recipe & Life
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="recipe.html">Recipe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="store.html">Store</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <section>
+        <h1 class="sr-only">Recipe Page</h1>
+        <div class="container">
+        <div class="search-title">Looking for something?</div>
+        <div class="input-group search-bar">
+            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+            <div class="input-group-append">
+                <button type="button" class="btn btn-outline-secondary">Search</button>
+                <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Find Similar</a>
+                    <a class="dropdown-item" href="#">Search by Cuisines</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Find in Other Sites</a>
+                </div>
+            </div>
+        </div><!-- end searchbar -->
+
+        <div class="list-title">Recommendations for you:</div>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start list-group-item-info">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Japanese Beef Ramen</h5>
+                    <small>3 days ago</small>
+                </div>
+                <p class="mb-1">"The finest Japanese pork ramen takes considerable culinary skill and many hours to create."</p>
+                <small>Daily Recommendation</small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Creole Shrimp and Creamed Corn</h5>
+                    <small class="text-muted">1 day ago</small>
+                </div>
+                <p class="mb-1">"In this fun twist on shrimp and grits, buttery creamed corn stands in for grits—a sweet and tasty surprise."</p>
+                <small class="text-muted">Daily Recommendation</small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">French Toast Fries</h5>
+                    <small class="text-muted">2 days ago</small>
+                </div>
+                <p class="mb-1">"Working one at a time, quickly toss fries in egg mixture until just coated then immediately add to skillet."</p>
+                <small class="text-muted">Trending Recipe</small>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Cool Whip Easter Eggs</h5>
+                    <small class="text-muted">4 days ago</small>
+                </div>
+                <p class="mb-1">"Place eggs in a large bowl and cover with white vinegar. Soak for 2 minutes, drain and dry the eggs thoroughly."</p>
+                <small class="text-muted">Creative Recipe</small>
+            </a>
+        </div><!-- end list items -->
+
+        <div class="video-title">Watch our daily recommendation video:</div>
+        <div class="video-container">
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/DLg070d3E2w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        </div><!-- end container -->
+    </section>
+    
+    <footer>
+        <div class="footer-logo">
+            <img class="logo-img" src="images/logo.png" alt="logo image">
+            <div class="footer-name">Recipe & Life</div>
+        </div>
+        <div class="social-media">
+            <i class="fab fa-facebook-f footer-transform"></i>
+            <i class="fab fa-twitter footer-transform"></i>
+            <i class="fab fa-instagram footer-transform"></i>
+            <i class="fab fa-google-plus-g footer-transform"></i>
+            <i class="fab fa-pinterest footer-transform"></i>
+        </div>
+        <div class="footer-note">©2018 Yue Lin Designed. All Rights Reserved.</div>
+    </footer>
+</body>
+
+</html>
